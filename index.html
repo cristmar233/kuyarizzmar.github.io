@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growing Sunflower Animation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <style>
+    body {
+        background-color: rgb(240, 188, 245);
+      height: 100%;
+      width: 100%;
+      margin: 0; /* Remove default margin to ensure full screen usage */
+      overflow: hidden; /* Prevent scrollbars */
+      font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    }
+
+
+    .message {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 36px;
+      font-weight: bold;
+      color: #ff69b4; /* Choose a color you like */
+      text-align: center;
+    }
+
+.circle {
+  background-color: #152E08;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: circle 6s linear 1;
+}
+.petal {
+  background-color: #ff2b2b; 
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 0 50% 0 50%;
+}
+.petal-1 {
+  transform: translate(-80%, -80%);
+}
+.petal-2 {
+  transform: translate(0%, -120%) rotateZ(37deg) ;
+}
+.petal-3 {
+  transform: translate(90%, -110%) rotateZ(70deg) ;
+}
+.petal-4 {
+  transform: translate(150%, -50%) rotateZ(105deg) ;
+}
+.petal-5 {
+  transform: translate(170%, 40%) rotateZ(140deg) ;
+}
+.petal-6 {
+  transform: translate(135%, 120%) rotateZ(-10deg) ;
+}
+.petal-7 {
+  transform: translate(60%, 170%) rotateZ(30deg) ;
+}
+.petal-8 {
+  transform: translate(-30%, 160%) rotateZ(70deg) ;
+}
+.petal-9 {
+  transform: translate(-100%, 100%) rotateZ(-75deg);
+}
+.petal-10 {
+  transform: translate(-120%, 10%) rotateZ(-40deg);
+}
+
+.stem {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #8DB789;
+  width: 10px;
+  height: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  animation: stem 5s linear 1;
+}
+
+.inner-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #8DB789;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: inner-circle 4s linear 1;
+}
+
+@keyframes circle {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  75% {
+    transform: translate(-50%, -50%) scale(.2);
+  }
+  95% {
+     background-color: #8DB789;
+  }
+}
+
+@keyframes stem {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+  25% {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes inner-circle {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #D1E8BA;
+  }
+  35% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    background-color: #D1E8BA;
+  }
+}
+
+
+.circle2 {
+      background-color: #152E08;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 30%;
+      left: 70%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: circle 6s linear 1;
+    }
+
+    .inner-circle2 {
+      width: 100px;
+      height: 100px;
+      background-color: #8DB789;
+      border-radius: 50%;
+      position: absolute;
+      top: 30%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      animation: inner-circle 4s linear 1;
+    }
+
+    .stem2 {
+      position: absolute;
+      bottom: 0;
+      left: 70%;
+      background-color: #8DB789;
+      width: 10px;
+      height: 70%;
+      transform: translateX(-50%);
+      z-index: -1;
+      animation: stem 5s linear 1;
+    }
+
+    .circle3 {
+      background-color: #152E08;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: circle 6s linear 1;
+    }
+
+    .inner-circle3 {
+      width: 100px;
+      height: 100px;
+      background-color: #8DB789;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      animation: inner-circle 4s linear 1;
+    }
+
+    .stem3 {
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      background-color: #8DB789;
+      width: 10px;
+      height: 80%;
+      transform: translateX(-50%);
+      z-index: -1;
+      animation: stem 5s linear 1;
+    }
+
+    .circle4 {
+      background-color: #152E08;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: circle 6s linear 1;
+    }
+
+    .inner-circle4 {
+      width: 100px;
+      height: 100px;
+      background-color: #8DB789;
+      border-radius: 50%;
+      position: absolute;
+      top: 90%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      animation: inner-circle 4s linear 1;
+    }
+
+    .stem4 {
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      background-color: #8DB789;
+      width: 10px;
+      height: 10%;
+      transform: translateX(-50%);
+      z-index: -1;
+      animation: stem 5s linear 1;
+    }
+    
+    .circle5 {
+      background-color: #152E08;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: circle 6s linear 1;
+    }
+
+    .inner-circle5 {
+      width: 100px;
+      height: 100px;
+      background-color: #8DB789;
+      border-radius: 50%;
+      position: absolute;
+      top: 75%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+      animation: inner-circle 4s linear 1;
+    }
+
+    .stem5 {
+      position: absolute;
+      bottom: 0;
+      left: 85%;
+      background-color: #8DB789;
+      width: 10px;
+      height: 25%;
+      transform: translateX(-50%);
+      z-index: -1;
+      animation: stem 5s linear 1;
+    }
+    
+
+  </style>
+</head>
+<body>
+
+    <div class="message">
+        I LOVE YOU ADI NAKO ♡ 
+        <h6>Mao ray nakaya nako adi HAHAHAHAHAHA di kay ko kabalo pahawd hawd ra baya ko HAHAHAHAHAHA kuha rako gamay sa google tawn </h6>
+      </div>
+
+    <div class='circle'>
+        <div class='petal petal-1'></div>
+        <div class='petal petal-2'></div>
+        <div class='petal petal-3'></div>
+        <div class='petal petal-4'></div>
+        <div class='petal petal-5'></div>
+        <div class='petal petal-6'></div>
+        <div class='petal petal-7'></div>
+        <div class='petal petal-8'></div>
+        <div class='petal petal-9'></div>
+        <div class='petal petal-10'></div>
+      </div>
+      </div>
+      <div class="inner-circle"></div>
+      <div class="stem"></div>
+
+
+      <div class='circle2'>
+        <div class='petal petal-1'></div>
+        <div class='petal petal-2'></div>
+        <div class='petal petal-3'></div>
+        <div class='petal petal-4'></div>
+        <div class='petal petal-5'></div>
+        <div class='petal petal-6'></div>
+        <div class='petal petal-7'></div>
+        <div class='petal petal-8'></div>
+        <div class='petal petal-9'></div>
+        <div class='petal petal-10'></div>
+      </div>
+      </div>
+      <div class="inner-circle2"></div>
+      <div class="stem2"></div>
+
+
+      <div class='circle3'>
+        <div class='petal petal-1'></div>
+        <div class='petal petal-2'></div>
+        <div class='petal petal-3'></div>
+        <div class='petal petal-4'></div>
+        <div class='petal petal-5'></div>
+        <div class='petal petal-6'></div>
+        <div class='petal petal-7'></div>
+        <div class='petal petal-8'></div>
+        <div class='petal petal-9'></div>
+        <div class='petal petal-10'></div>
+      </div>
+      </div>
+      <div class="inner-circle3"></div>
+      <div class="stem3"></div>
+
+      <div class='circle4'>
+        <div class='petal petal-1'></div>
+        <div class='petal petal-2'></div>
+        <div class='petal petal-3'></div>
+        <div class='petal petal-4'></div>
+        <div class='petal petal-5'></div>
+        <div class='petal petal-6'></div>
+        <div class='petal petal-7'></div>
+        <div class='petal petal-8'></div>
+        <div class='petal petal-9'></div>
+        <div class='petal petal-10'></div>
+      </div>
+      </div>
+      <div class="inner-circle4"></div>
+      <div class="stem4"></div>
+ 
+      <div class='circle5'>
+        <div class='petal petal-1'></div>
+        <div class='petal petal-2'></div>
+        <div class='petal petal-3'></div>
+        <div class='petal petal-4'></div>
+        <div class='petal petal-5'></div>
+        <div class='petal petal-6'></div>
+        <div class='petal petal-7'></div>
+        <div class='petal petal-8'></div>
+        <div class='petal petal-9'></div>
+        <div class='petal petal-10'></div>
+      </div>
+      </div>
+      <div class="inner-circle5"></div>
+      <div class="stem5"></div>
+
+</html>
